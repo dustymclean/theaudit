@@ -139,78 +139,117 @@
 
             <div class="overflow-hidden rounded-[2.5rem] border border-pink-100 shadow-2xl shadow-pink-500/5 bg-white mb-20">
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse min-w-[1000px]">
+                    <table class="w-full text-left border-collapse min-w-[1200px]">
                         <thead>
                             <tr class="bg-pink-50/50 border-b border-pink-100">
-                                <th class="px-10 py-8 text-[11px] font-black text-pink-500 uppercase tracking-widest w-[20%]">Audit Domain</th>
-                                <th class="px-10 py-8 text-[11px] font-black text-pink-500 uppercase tracking-widest w-[40%]">MGV-1 Compliance Standard</th>
-                                <th class="px-10 py-8 text-[11px] font-black text-pink-500 uppercase tracking-widest">Clinical Risk / Immediate Fail</th>
+                                <th class="px-10 py-8 text-[11px] font-black text-pink-500 uppercase tracking-widest w-[18%]">Audit Domain</th>
+                                <th class="px-10 py-8 text-[11px] font-black text-pink-500 uppercase tracking-widest w-[42%]">MGV-1 Compliance Standard (Verification Protocol)</th>
+                                <th class="px-10 py-8 text-[11px] font-black text-pink-500 uppercase tracking-widest">Clinical Risk Benchmark (Immediate Fail)</th>
                             </tr>
                         </thead>
                         <tbody class="text-neutral-600 font-serif">
                             <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
                                 <td class="px-10 py-10">
-                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Vapor Path Inertness</div>
-                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Respiratory</div>
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Vapor Path Composition</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Chemistry</div>
                                 </td>
                                 <td class="px-10 py-10 italic text-lg leading-relaxed">
-                                    Hermetically sealed path utilizing <span class="not-italic font-bold">SCHOTT Duran®</span> borosilicate or <span class="not-italic font-bold">Grade 2 Titanium</span>. Zero exposure to flux, solder, or silicones in high-heat zones.
+                                    Hermetically isolated airpath $\ge 98\%$ composed of <span class="not-italic font-bold">ISO 3585 / Borosilicate 3.3</span>, <span class="not-italic font-bold">Grade 2 Titanium</span>, or <span class="not-italic font-bold">316L Stainless Steel</span>.
                                 </td>
                                 <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
-                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: LEACHATE RISK</span>
-                                    Air path intersection with circuit boards (PCB), untrimmed wiring, or alkaline battery housing.
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: LEACHATE EXPOSURE</span>
+                                    Air path intersection with circuit boards (PCB), lead-bearing solder, or non-food-grade alkaline battery housings.
                                 </td>
                             </tr>
                             <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
                                 <td class="px-10 py-10">
-                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Thermal Stability</div>
-                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Thermodynamic</div>
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Thermodynamic Stability</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Physics</div>
                                 </td>
                                 <td class="px-10 py-10 italic text-lg leading-relaxed">
-                                    $\pm 2^{\circ}\mathrm{F}$ active temperature regulation. Continuous heater feedback loops preventing "heat-soak" variance during vigorous draw.
+                                    Precision Thermoregulation Control (PTC) maintaining $\le \pm 2^{\circ}\mathrm{F}$ active stability during maximum cubic airflow ($> 15\text{L/min}$).
                                 </td>
                                 <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
-                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: TOXIC BY-PRODUCT</span>
-                                    Thermal runaway potential $> 455^{\circ}\mathrm{F}$ (Combustion Point) resulting in Carbon Monoxide/Benzene production.
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: THERMAL RUNAWAY</span>
+                                    Surface temperatures breaching the <span class="font-bold text-neutral-900">$455^{\circ}\mathrm{F}$ combustion threshold</span>, inducing carbon monoxide or benzene synthesis.
                                 </td>
                             </tr>
                             <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
                                 <td class="px-10 py-10">
-                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Bio-Security</div>
-                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Cytotoxicity</div>
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Molecular Adhesion</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: VOC Mitigation</div>
                                 </td>
                                 <td class="px-10 py-10 italic text-lg leading-relaxed">
-                                    <span class="not-italic font-bold">USP Class VI</span> certified interaction surfaces. Resistant to high-concentration ISO sanitization without material degradation or pitting.
+                                    Total elimination of industrial cyanoacrylates or epoxies in high-heat zones. Component seals must utilize <span class="not-italic font-bold">USP Class VI</span> friction or compression fitting.
                                 </td>
                                 <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
-                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: PATHOGEN TRAP</span>
-                                    Non-removable mouthpieces or internal geometry that captures moisture/bio-film with no mechanical sanitization access.
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: CHEMICAL OFF-GASSING</span>
+                                    Presence of manufacturing residues, flux, or un-vetted adhesives that activate at operational temperatures ($> 300^{\circ}\mathrm{F}$).
                                 </td>
                             </tr>
                             <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
                                 <td class="px-10 py-10">
-                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">EMF Shielding</div>
-                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Electronic</div>
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Fracture Mechanics</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Structural</div>
                                 </td>
                                 <td class="px-10 py-10 italic text-lg leading-relaxed">
-                                    Isolated electronic housing with Faraday-style shielding to prevent electromagnetic interference with sensitive medical equipment (Pacemakers, etc).
+                                    Polarized light verification of glass annealing uniformity. Coefficient of Linear Thermal Expansion ($3.3 \times 10^{-6} \, \mathrm{K}^{-1}$) must be consistent across the manifold.
                                 </td>
                                 <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
-                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: INTERFERENCE</span>
-                                    Unshielded high-current PWM (Pulse Width Modulation) drivers causing localized electronic noise.
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: PARTICULATE RELEASE</span>
+                                    Un-annealed glass with localized stress concentrations susceptible to micro-fracture "dusting" during thermal shock cycles.
+                                </td>
+                            </tr>
+                            <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
+                                <td class="px-10 py-10">
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Bio-Security & Hygiene</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Biology</div>
+                                </td>
+                                <td class="px-10 py-10 italic text-lg leading-relaxed">
+                                    <span class="not-italic font-bold">Autoclave-Compatible Geometry</span>. Surfaces must withstand $250^{\circ}\mathrm{F}$ steam or 91% ISO immersion without material pitting or oxidative decay.
+                                </td>
+                                <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: BIO-FILM ACCUMULATION</span>
+                                    Fixed internal reservoirs or non-removable mouthpieces that trap moisture and botanical debris, creating un-sanitizable pathogen traps.
+                                </td>
+                            </tr>
+                            <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
+                                <td class="px-10 py-10">
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Pneumatic Control</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Aerodynamics</div>
+                                </td>
+                                <td class="px-10 py-10 italic text-lg leading-relaxed">
+                                    Verification of standardized airflow resistance ($\le 2.0\text{ inH}_2\text{O}$). Integrated Pressure Regulation Valves to prevent high-velocity aerosol throat irritation.
+                                </td>
+                                <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: RESPIRATORY STRESS</span>
+                                    Excessive draw resistance or turbulent flow geometry that induces secondary pulmonary irritation unrelated to the medicine.
+                                </td>
+                            </tr>
+                            <tr class="border-b border-neutral-50 hover:bg-neutral-50/30 transition-colors">
+                                <td class="px-10 py-10">
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Logic Redundancy</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Safety Systems</div>
+                                </td>
+                                <td class="px-10 py-10 italic text-lg leading-relaxed">
+                                    Dual-layer protection: Software PID loop monitoring paired with a <span class="not-italic font-bold">Physical Thermal Fuse</span> (fail-safe) to isolate power during controller failure.
+                                </td>
+                                <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: SYSTEMIC FAILURE</span>
+                                    Single-point failure potential where a software bug allows unchecked heater activation during high-current charging or operation.
                                 </td>
                             </tr>
                             <tr class="hover:bg-neutral-50/30 transition-colors">
                                 <td class="px-10 py-10">
-                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Metallurgical Integrity</div>
-                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Alloy Safety</div>
+                                    <div class="font-bold text-neutral-900 not-italic text-lg mb-1">Metallurgical Traceability</div>
+                                    <div class="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Domain: Metallurgy</div>
                                 </td>
                                 <td class="px-10 py-10 italic text-lg leading-relaxed">
-                                    Total elimination of Chrome-plating and Lead-bearing alloys. All metals must be certified <span class="not-italic font-bold">AISI 316L</span> or <span class="not-italic font-bold">CP2 Titanium</span>.
+                                    Certificate of Conformance (CoC) verifying <span class="not-italic font-bold">AISI 316L</span> or <span class="not-italic font-bold">ASTM B265 Grade 2 Titanium</span>. Zero zinc, lead, or chromium-plating in aerosol zones.
                                 </td>
                                 <td class="px-10 py-10 text-neutral-500 leading-relaxed bg-red-50/10">
-                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: HEAVY METAL RISK</span>
-                                    Evidence of Zinc-offgassing, plating flaking, or use of "Mystery Metal" heat sinks.
+                                    <span class="text-red-400 font-bold uppercase text-[10px] block mb-2">FAIL: HEAVY METAL TOXICITY</span>
+                                    Evidence of surface flaking, oxidative pitting, or the use of unidentified "mystery alloys" in the heat-exchange manifold.
                                 </td>
                             </tr>
                         </tbody>
