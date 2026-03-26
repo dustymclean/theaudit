@@ -7,7 +7,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         audit: resolve(__dirname, 'theaudit.html'),
-        audit2: resolve(__dirname, 'theaudit2.html'),
+        // REMOVED audit2 because it was deleted
       },
     },
   },
